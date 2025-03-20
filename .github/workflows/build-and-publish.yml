@@ -9,7 +9,8 @@ on:
       - 'master'
   pull_request:
     branches: [ master ]
-     
+  workflow_dispatch: # Allows manual triggering of the workflow
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
